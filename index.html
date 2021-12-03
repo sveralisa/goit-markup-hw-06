@@ -76,6 +76,51 @@
                   <use href="./img/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+              <form action="#" class="modal-form">
+                <div class="modal-form-field">
+                  <label for="user-name" class="input-title">Имя</label>
+                  <input
+                    type="text"
+                    name="user-name"
+                    id="user-name"
+                    class="modal-input"
+                    minlength="2"
+                    required
+                  />
+                </div>
+                <div class="modal-form-field">
+                  <label for="user-tel" class="input-title">Телефон</label>
+                  <input
+                    type="tel"
+                    name="user-tel"
+                    id="user-tel"
+                    class="modal-input"
+                    required
+                  />
+                </div>
+
+                <div class="modal-form-field">
+                  <label for="user-mail" class="input-title">Почта</label>
+                  <input
+                    type="mail"
+                    name="user-mail"
+                    id="user-mail"
+                    class="modal-input"
+                    required
+                  />
+                </div>
+
+                <div class="modal-form-field">
+                  <label for="feedback" class="input-title">Комментарий</label>
+                  <textarea
+                    name="feedback"
+                    id="feedback"
+                    class="feedback-txt"
+                    placeholder="Введите текст"
+                  ></textarea>
+                </div>
+              </form>
             </div>
           </div>
         </div>
