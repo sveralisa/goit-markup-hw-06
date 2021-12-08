@@ -80,37 +80,50 @@
               <form action="#" class="modal-form">
                 <div class="modal-form-field">
                   <label for="user-name" class="input-title">Имя</label>
-                  <input
-                    type="text"
-                    name="user-name"
-                    id="user-name"
-                    class="modal-input"
-                    minlength="2"
-                    required
-                  />
+                  <div class="modal-input-wrap">
+                    <input
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      class="modal-input"
+                      minlength="2"
+                      required
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                      <use href="./img/icons.svg#icon-person-black"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="modal-form-field">
                   <label for="user-tel" class="input-title">Телефон</label>
-                  <input
-                    type="tel"
-                    name="user-tel"
-                    id="user-tel"
-                    class="modal-input"
-                    required
-                  />
+                  <div class="modal-input-wrap">
+                    <input
+                      type="tel"
+                      name="user-tel"
+                      id="user-tel"
+                      class="modal-input"
+                      required
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                      <use href="./img/icons.svg#icon-phone-black"></use>
+                    </svg>
+                  </div>
                 </div>
-
                 <div class="modal-form-field">
-                  <label for="user-mail" class="input-title">Почта</label>
-                  <input
-                    type="mail"
-                    name="user-mail"
-                    id="user-mail"
-                    class="modal-input"
-                    required
-                  />
+                  <label for="user-email" class="input-title">Почта</label>
+                  <div class="modal-input-wrap">
+                    <input
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      class="modal-input"
+                      required
+                    />
+                    <svg class="input-icon" width="18" height="18">
+                      <use href="./img/icons.svg#icon-email-black"></use>
+                    </svg>
+                  </div>
                 </div>
-
                 <div class="modal-form-field">
                   <label for="feedback" class="input-title">Комментарий</label>
                   <textarea
@@ -120,13 +133,22 @@
                     placeholder="Введите текст"
                   ></textarea>
                 </div>
-                <div class="modal-form-field terms">
-                  <label>
-                    <input type="checkbox" class="terms-checkbox" required />
-                    <span class="terms-text"
-                      >Соглашаюсь с рассылкой и принимаю</span
-                    >
-                    <a href="" class="terms-link">Условия договора</a>
+                <div class="modal-form-field">
+                  <input
+                    type="checkbox"
+                    name="terms"
+                    id="terms-check"
+                    class="modal-check visually-hidden"
+                    required
+                  />
+                  <label for="terms-check" class="terms-check">
+                    <span>
+                      <svg class="icon-check" width="16" height="15">
+                        <use href="./img/icons.svg#icon-check"></use>
+                      </svg>
+                    </span>
+                    Соглашаюсь с рассылкой и принимаю &nbsp;
+                    <a href="#" class="terms-link">Условия договора</a>
                   </label>
                 </div>
                 <button type="submit" class="submit-btn">Отправить</button>
@@ -689,16 +711,16 @@
             <div class="sign-up-form">
               <label>
                 <input
-                  type="mail"
-                  name="user-mail"
+                  type="email"
+                  name="user-email"
                   class="sign-up-input"
-                  placeholder="E-mail"
+                  placeholder="email"
                 />
               </label>
               <button type="submit" class="sign-up-btn">
                 Подписаться
                 <svg class="sign-up-icon" width="24" height="24">
-                  <use href=""></use>
+                  <use href="./img/icons.svg#icon-send"></use>
                 </svg>
               </button>
             </div>
